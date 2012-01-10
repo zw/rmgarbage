@@ -61,7 +61,7 @@ WORD: foreach my $word ($tree->findnodes('//span[@class="ocrx_word"]')) {
     }
 }
 
-print $tree->as_HTML(undef, "    ");
+print $tree->as_HTML(undef, "    ", {});
 
 sub isgarbage {
     my $string = shift();
